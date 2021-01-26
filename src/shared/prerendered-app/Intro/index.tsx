@@ -236,7 +236,7 @@ export default class Intro extends Component<Props, State> {
               class={style.blobCanvas}
             />
           )}
-          <h1 class={style.logoContainer}>
+          <h1 class={style.logoContainer} style={{ textAlign: 'center' }}>
             <img
               class={style.logo}
               src={logoWithText}
@@ -244,6 +244,7 @@ export default class Intro extends Component<Props, State> {
               width="539"
               height="162"
             />
+            <div>浏览器端性能最好、最快的图片压缩工具</div>
           </h1>
           <div class={style.loadImg}>
             {showBlobSVG && (
@@ -281,13 +282,13 @@ export default class Intro extends Component<Props, State> {
                 </svg>
               </button>
               <div>
-                <span class={style.dropText}>Drop </span>OR{' '}
+                <span class={style.dropText}>拖拽 </span>或{' '}
                 {supportsClipboardAPI ? (
                   <button class={style.pasteBtn} onClick={this.onPasteClick}>
-                    Paste
+                    粘贴
                   </button>
                 ) : (
-                  'Paste'
+                  '粘贴'
                 )}
               </div>
             </div>
@@ -306,7 +307,7 @@ export default class Intro extends Component<Props, State> {
           </svg>
           <div class={style.contentPadding}>
             <p class={style.demoTitle}>
-              Or <strong>try one</strong> of these:
+              或者打开一个 <strong>示例</strong> 进行压缩:
             </p>
             <ul class={style.demos}>
               {demos.map((demo, i) => (
@@ -343,7 +344,7 @@ export default class Intro extends Component<Props, State> {
               class={style.footerWave}
             />
           </svg>
-          <div class={style.contentPadding}>
+          {/* <div class={style.contentPadding}>
             <footer class={style.footerItems}>
               <a
                 class={style.footerLink}
@@ -365,11 +366,11 @@ export default class Intro extends Component<Props, State> {
                 Source on Github
               </a>
             </footer>
-          </div>
+          </div> */}
         </div>
         {beforeInstallEvent && (
           <button class={style.installBtn} onClick={this.onInstallClick}>
-            Install
+            安装
           </button>
         )}
       </div>

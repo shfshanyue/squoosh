@@ -50,7 +50,7 @@ export default class App extends Component<Props, State> {
         this.setState({ Compress: module.default });
       })
       .catch(() => {
-        this.showSnack('Failed to load app');
+        this.showSnack('加载 App 失败');
       });
 
     swBridgePromise.then(async ({ offliner, getSharedImage }) => {

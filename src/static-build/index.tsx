@@ -47,7 +47,7 @@ interface Output {
 const toOutput: Output = {
   'index.html': renderPage(<IndexPage />),
   'manifest.json': JSON.stringify({
-    name: 'Squoosh',
+    name: 'Squoosh中文版',
     short_name: 'Squoosh',
     start_url: '/?utm_medium=PWA&utm_source=launcher',
     display: 'standalone',
@@ -68,7 +68,7 @@ const toOutput: Output = {
       },
     ],
     description:
-      'Compress and compare images with different codecs, right in your browser.',
+      '性能最好的浏览器端图片压缩工具，可压缩任意格式图片(JPEG/PNG/Webp/Avif)并支持格式转化，并可以比较各种压缩方式的压缩比例从而找出最适合的图片格式。.',
     lang: 'en',
     categories: ['photo', 'productivity', 'utilities'],
     screenshots: [

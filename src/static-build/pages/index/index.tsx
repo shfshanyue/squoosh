@@ -24,10 +24,12 @@ interface Props {}
 const Index: FunctionalComponent<Props> = () => (
   <html lang="en">
     <head>
-      <title>Squoosh</title>
+      <title>
+        Squoosh | 免费高性能在线图片压缩及格式转换工具 | 开发者工具箱
+      </title>
       <meta
         name="description"
-        content="Compress and compare images with different codecs, right in your browser"
+        content="性能最好的浏览器端图片压缩工具，可压缩任意格式图片(JPEG/PNG/Webp/Avif)并支持格式转化，并可比较各种压缩方式的压缩比例从而找出最适合的图片格式。"
       />
       <meta
         name="viewport"

@@ -33,7 +33,7 @@ main();
 
   // Setup analytics
   window.ga = window.ga || ((...args) => (ga.q = ga.q || []).push(args));
-  ga('create', 'UA-128752250-1', 'auto');
+  ga('create', 'UA-102193749-5', 'auto');
   ga('set', 'transport', 'beacon');
   ga('set', 'dimension1', displayMode);
   ga('send', 'pageview', '/index.html', { title: 'Squoosh' });
